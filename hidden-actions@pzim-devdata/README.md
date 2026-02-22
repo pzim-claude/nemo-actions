@@ -18,15 +18,21 @@ sudo apt install python3-xlib zenity
 ### One-line install
 
 ```bash
-curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions@pzim-devdata.zip" -o /tmp/hidden-actions.zip && unzip -o /tmp/hidden-actions.zip -d ~/.local/share/nemo/actions && rm /tmp/hidden-actions.zip && nemo -q
+curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions@pzim-devdata.zip" -o /tmp/hidden-actions.zip && \
+unzip -o /tmp/hidden-actions.zip -d /tmp/hidden-actions-install && \
+mv /tmp/hidden-actions-install/hidden-actions@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+rm -rf /tmp/hidden-actions.zip /tmp/hidden-actions-install && \
+nemo -q
 ```
 
 ### Manual install
 
-Download [hidden-actions@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions@pzim-devdata.zip), then:
+Download [hidden-actions@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions@pzim-devdata.zip), extract and move contents:
 
 ```bash
-unzip hidden-actions@pzim-devdata.zip -d ~/.local/share/nemo/actions
+unzip hidden-actions@pzim-devdata.zip -d /tmp/hidden-actions-install && \
+mv /tmp/hidden-actions-install/hidden-actions@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+rm -rf /tmp/hidden-actions-install && \
 nemo -q
 ```
 

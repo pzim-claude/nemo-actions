@@ -17,15 +17,21 @@ sudo apt install python3-gi
 ### One-line install
 
 ```bash
-curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip" -o /tmp/print-native.zip && unzip -o /tmp/print-native.zip -d ~/.local/share/nemo/actions && rm /tmp/print-native.zip && nemo -q
+curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip" -o /tmp/print-native.zip && \
+unzip -o /tmp/print-native.zip -d /tmp/print-native-install && \
+mv /tmp/print-native-install/print-native@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+rm -rf /tmp/print-native.zip /tmp/print-native-install && \
+nemo -q
 ```
 
 ### Manual install
 
-Download [print-native@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip), then:
+Download [print-native@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip), extract and move contents:
 
 ```bash
-unzip print-native@pzim-devdata.zip -d ~/.local/share/nemo/actions
+unzip print-native@pzim-devdata.zip -d /tmp/print-native-install && \
+mv /tmp/print-native-install/print-native@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+rm -rf /tmp/print-native-install && \
 nemo -q
 ```
 
