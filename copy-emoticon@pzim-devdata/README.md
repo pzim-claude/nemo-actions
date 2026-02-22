@@ -21,7 +21,7 @@ sudo apt install zenity xclip gnome-characters
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon@pzim-devdata.zip" -o /tmp/copy-emoticon.zip && \
 unzip -o /tmp/copy-emoticon.zip -d /tmp/copy-emoticon-install && \
-cp -rf /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/. ~/.local/share/nemo/actions/copy-emoticon@pzim-devdata/ && \
+cp -rf /tmp/copy-emoticon-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/copy-emoticon.zip /tmp/copy-emoticon-install && \
 nemo -q
 ```
@@ -32,7 +32,7 @@ Download [copy-emoticon@pzim-devdata.zip](https://github.com/pzim-claude/nemo-ac
 
 ```bash
 unzip copy-emoticon@pzim-devdata.zip -d /tmp/copy-emoticon-install && \
-cp -rf /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/. ~/.local/share/nemo/actions/copy-emoticon@pzim-devdata/ && \
+cp -rf /tmp/copy-emoticon-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/copy-emoticon-install && \
 nemo -q
 ```

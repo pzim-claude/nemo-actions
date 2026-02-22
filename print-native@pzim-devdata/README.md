@@ -19,7 +19,7 @@ sudo apt install python3-gi
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip" -o /tmp/print-native.zip && \
 unzip -o /tmp/print-native.zip -d /tmp/print-native-install && \
-cp -rf /tmp/print-native-install/print-native@pzim-devdata/. ~/.local/share/nemo/actions/print-native@pzim-devdata/ && \
+cp -rf /tmp/print-native-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/print-native.zip /tmp/print-native-install && \
 nemo -q
 ```
@@ -30,7 +30,7 @@ Download [print-native@pzim-devdata.zip](https://github.com/pzim-claude/nemo-act
 
 ```bash
 unzip print-native@pzim-devdata.zip -d /tmp/print-native-install && \
-cp -rf /tmp/print-native-install/print-native@pzim-devdata/. ~/.local/share/nemo/actions/print-native@pzim-devdata/ && \
+cp -rf /tmp/print-native-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/print-native-install && \
 nemo -q
 ```

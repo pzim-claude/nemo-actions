@@ -15,7 +15,7 @@ Install `.deb` packages directly from Nemo's context menu with automatic depende
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/install-deb-package@pzim-devdata.zip" -o /tmp/install-deb.zip && \
 unzip -o /tmp/install-deb.zip -d /tmp/install-deb-install && \
-cp -rf /tmp/install-deb-install/install-deb-package@pzim-devdata/. ~/.local/share/nemo/actions/install-deb-package@pzim-devdata/ && \
+cp -rf /tmp/install-deb-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/install-deb.zip /tmp/install-deb-install && \
 nemo -q
 ```
@@ -26,7 +26,7 @@ Download [install-deb-package@pzim-devdata.zip](https://github.com/pzim-claude/n
 
 ```bash
 unzip install-deb-package@pzim-devdata.zip -d /tmp/install-deb-install && \
-cp -rf /tmp/install-deb-install/install-deb-package@pzim-devdata/. ~/.local/share/nemo/actions/install-deb-package@pzim-devdata/ && \
+cp -rf /tmp/install-deb-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/install-deb-install && \
 nemo -q
 ```

@@ -20,7 +20,7 @@ sudo apt install libreoffice
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document@pzim-devdata.zip" -o /tmp/paste-into-document.zip && \
 unzip -o /tmp/paste-into-document.zip -d /tmp/paste-into-document-install && \
-cp -rf /tmp/paste-into-document-install/paste-into-document@pzim-devdata/. ~/.local/share/nemo/actions/paste-into-document@pzim-devdata/ && \
+cp -rf /tmp/paste-into-document-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/paste-into-document.zip /tmp/paste-into-document-install && \
 nemo -q
 ```
@@ -31,7 +31,7 @@ Download [paste-into-document@pzim-devdata.zip](https://github.com/pzim-claude/n
 
 ```bash
 unzip paste-into-document@pzim-devdata.zip -d /tmp/paste-into-document-install && \
-cp -rf /tmp/paste-into-document-install/paste-into-document@pzim-devdata/. ~/.local/share/nemo/actions/paste-into-document@pzim-devdata/ && \
+cp -rf /tmp/paste-into-document-install/. ~/.local/share/nemo/actions/ && \
 rm -rf /tmp/paste-into-document-install && \
 nemo -q
 ```
