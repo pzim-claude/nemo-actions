@@ -36,11 +36,11 @@ Download the `.zip` of any action and use the one-line install command from each
 ## 📦 Actions
 
 | Action | Description | Download | Install |
-|--------|-------------|------------|--------|
+|--------|-------------|----------|--------|
 | 🖨️ Convert to PDF | Convert documents and images to PDF | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf%40pzim-devdata.zip) | [📄 README](convert-to-pdf@pzim-devdata/README.md) |
 | 😀 Copy an Emoticon | Quick access to emoticons with clipboard copy | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon%40pzim-devdata.zip) | [📄 README](copy-emoticon@pzim-devdata/README.md) |
 | 🔒 Hidden Actions | Execute scripts via Ctrl+Right-click | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions%40pzim-devdata.zip) | [📄 README](hidden-actions@pzim-devdata/README.md) |
-| 📥 | Install Debian Package | Install .deb with auto dependency resolution | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/install-deb-package%40pzim-devdata.zip) | [📄 README](install-deb-package@pzim-devdata/README.md) |
+| 📥 Install Debian Package | Install .deb with auto dependency resolution | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/install-deb-package%40pzim-devdata.zip) | [📄 README](install-deb-package@pzim-devdata/README.md) |
 | 🎬 Display Media Information | Detailed media info via MediaInfo GUI | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/mediainfo-gui%40pzim-devdata.zip) | [📄 README](mediainfo-gui@pzim-devdata/README.md) |
 | 📋 Paste into Document | Paste clipboard into a new document | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document%40pzim-devdata.zip) | [📄 README](paste-into-document@pzim-devdata/README.md) |
 | 🖨️ Print File | Native GTK print dialog from Nemo | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native%40pzim-devdata.zip) | [📄 README](print-native@pzim-devdata/README.md) |
