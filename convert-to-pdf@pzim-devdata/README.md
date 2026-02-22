@@ -17,18 +17,18 @@ sudo apt install libreoffice
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf@pzim-devdata.zip" -o /tmp/convert-to-pdf.zip && \
 unzip -o /tmp/convert-to-pdf.zip -d /tmp/convert-to-pdf-install && \
-mv /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/. ~/.local/share/nemo/actions/convert-to-pdf@pzim-devdata/ && \
 rm -rf /tmp/convert-to-pdf.zip /tmp/convert-to-pdf-install && \
 nemo -q
 ```
 
 ### Manual install
 
-Download [convert-to-pdf@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf@pzim-devdata.zip), extract and move contents:
+Download [convert-to-pdf@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf@pzim-devdata.zip), extract and copy contents:
 
 ```bash
 unzip convert-to-pdf@pzim-devdata.zip -d /tmp/convert-to-pdf-install && \
-mv /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/. ~/.local/share/nemo/actions/convert-to-pdf@pzim-devdata/ && \
 rm -rf /tmp/convert-to-pdf-install && \
 nemo -q
 ```

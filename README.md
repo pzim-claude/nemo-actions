@@ -36,7 +36,7 @@ Download the `.zip` of any action and use the one-line install command from each
 ## 📦 Actions
 
 | Action | Description | Download | Install |
-|--------|-------------|----------|--------|
+|--------|-------------|----------|---------|
 | 🖨️ Convert to PDF | Convert documents and images to PDF | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf%40pzim-devdata.zip) | [📄 README](convert-to-pdf@pzim-devdata/README.md) |
 | 😀 Copy an Emoticon | Quick access to emoticons with clipboard copy | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon%40pzim-devdata.zip) | [📄 README](copy-emoticon@pzim-devdata/README.md) |
 | 🔒 Hidden Actions | Execute scripts via Ctrl+Right-click | [⬇️ Download](https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions%40pzim-devdata.zip) | [📄 README](hidden-actions@pzim-devdata/README.md) |
@@ -58,7 +58,7 @@ Convert documents and images to PDF using LibreOffice, directly from the context
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/convert-to-pdf@pzim-devdata.zip" -o /tmp/convert-to-pdf.zip && \
 unzip -o /tmp/convert-to-pdf.zip -d /tmp/convert-to-pdf-install && \
-mv /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/convert-to-pdf-install/convert-to-pdf@pzim-devdata/. ~/.local/share/nemo/actions/convert-to-pdf@pzim-devdata/ && \
 rm -rf /tmp/convert-to-pdf.zip /tmp/convert-to-pdf-install && \
 nemo -q
 ```
@@ -76,7 +76,7 @@ Quick access to commonly used emoticons with a zenity dialog, copy to clipboard 
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon@pzim-devdata.zip" -o /tmp/copy-emoticon.zip && \
 unzip -o /tmp/copy-emoticon.zip -d /tmp/copy-emoticon-install && \
-mv /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/. ~/.local/share/nemo/actions/copy-emoticon@pzim-devdata/ && \
 rm -rf /tmp/copy-emoticon.zip /tmp/copy-emoticon-install && \
 nemo -q
 ```
@@ -94,7 +94,7 @@ Execute custom scripts placed in `~/.local/share/hidden_scripts/` via Ctrl+Right
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/hidden-actions@pzim-devdata.zip" -o /tmp/hidden-actions.zip && \
 unzip -o /tmp/hidden-actions.zip -d /tmp/hidden-actions-install && \
-mv /tmp/hidden-actions-install/hidden-actions@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/hidden-actions-install/hidden-actions@pzim-devdata/. ~/.local/share/nemo/actions/hidden-actions@pzim-devdata/ && \
 rm -rf /tmp/hidden-actions.zip /tmp/hidden-actions-install && \
 nemo -q
 ```
@@ -112,7 +112,7 @@ Install `.deb` packages from the context menu using `apt`, with automatic depend
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/install-deb-package@pzim-devdata.zip" -o /tmp/install-deb.zip && \
 unzip -o /tmp/install-deb.zip -d /tmp/install-deb-install && \
-mv /tmp/install-deb-install/install-deb-package@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/install-deb-install/install-deb-package@pzim-devdata/. ~/.local/share/nemo/actions/install-deb-package@pzim-devdata/ && \
 rm -rf /tmp/install-deb.zip /tmp/install-deb-install && \
 nemo -q
 ```
@@ -130,7 +130,7 @@ Display comprehensive technical metadata (codec, resolution, bitrate, EXIF, GPS�
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/mediainfo-gui@pzim-devdata.zip" -o /tmp/mediainfo-gui.zip && \
 unzip -o /tmp/mediainfo-gui.zip -d /tmp/mediainfo-gui-install && \
-mv /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/. ~/.local/share/nemo/actions/mediainfo-gui@pzim-devdata/ && \
 rm -rf /tmp/mediainfo-gui.zip /tmp/mediainfo-gui-install && \
 nemo -q
 ```
@@ -148,7 +148,7 @@ Paste clipboard content (text, rich text, images) into a new document from the c
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document@pzim-devdata.zip" -o /tmp/paste-into-document.zip && \
 unzip -o /tmp/paste-into-document.zip -d /tmp/paste-into-document-install && \
-mv /tmp/paste-into-document-install/paste-into-document@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/paste-into-document-install/paste-into-document@pzim-devdata/. ~/.local/share/nemo/actions/paste-into-document@pzim-devdata/ && \
 rm -rf /tmp/paste-into-document.zip /tmp/paste-into-document-install && \
 nemo -q
 ```
@@ -166,7 +166,7 @@ Open the native GTK print dialog for any file — identical to File > Print in g
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/print-native@pzim-devdata.zip" -o /tmp/print-native.zip && \
 unzip -o /tmp/print-native.zip -d /tmp/print-native-install && \
-mv /tmp/print-native-install/print-native@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/print-native-install/print-native@pzim-devdata/. ~/.local/share/nemo/actions/print-native@pzim-devdata/ && \
 rm -rf /tmp/print-native.zip /tmp/print-native-install && \
 nemo -q
 ```
@@ -182,7 +182,7 @@ Reload all active Cinnamon extensions without restarting the desktop. No depende
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/reload-all-extensions@pzim-devdata.zip" -o /tmp/reload-all-extensions.zip && \
 unzip -o /tmp/reload-all-extensions.zip -d /tmp/reload-all-extensions-install && \
-mv /tmp/reload-all-extensions-install/reload-all-extensions@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/reload-all-extensions-install/reload-all-extensions@pzim-devdata/. ~/.local/share/nemo/actions/reload-all-extensions@pzim-devdata/ && \
 rm -rf /tmp/reload-all-extensions.zip /tmp/reload-all-extensions-install && \
 nemo -q
 ```
@@ -200,7 +200,7 @@ Remove all EXIF, IPTC, XMP, GPS and other metadata from images. Supports 50+ for
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/remove-image-metadata@pzim-devdata.zip" -o /tmp/remove-image-metadata.zip && \
 unzip -o /tmp/remove-image-metadata.zip -d /tmp/remove-image-metadata-install && \
-mv /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/. ~/.local/share/nemo/actions/remove-image-metadata@pzim-devdata/ && \
 rm -rf /tmp/remove-image-metadata.zip /tmp/remove-image-metadata-install && \
 nemo -q
 ```

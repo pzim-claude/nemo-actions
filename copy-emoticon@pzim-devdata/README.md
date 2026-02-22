@@ -21,18 +21,18 @@ sudo apt install zenity xclip gnome-characters
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon@pzim-devdata.zip" -o /tmp/copy-emoticon.zip && \
 unzip -o /tmp/copy-emoticon.zip -d /tmp/copy-emoticon-install && \
-mv /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/. ~/.local/share/nemo/actions/copy-emoticon@pzim-devdata/ && \
 rm -rf /tmp/copy-emoticon.zip /tmp/copy-emoticon-install && \
 nemo -q
 ```
 
 ### Manual install
 
-Download [copy-emoticon@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon@pzim-devdata.zip), extract and move contents:
+Download [copy-emoticon@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/copy-emoticon@pzim-devdata.zip), extract and copy contents:
 
 ```bash
 unzip copy-emoticon@pzim-devdata.zip -d /tmp/copy-emoticon-install && \
-mv /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/copy-emoticon-install/copy-emoticon@pzim-devdata/. ~/.local/share/nemo/actions/copy-emoticon@pzim-devdata/ && \
 rm -rf /tmp/copy-emoticon-install && \
 nemo -q
 ```

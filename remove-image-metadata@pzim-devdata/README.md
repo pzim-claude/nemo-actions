@@ -19,18 +19,18 @@ sudo apt install exiftool
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/remove-image-metadata@pzim-devdata.zip" -o /tmp/remove-image-metadata.zip && \
 unzip -o /tmp/remove-image-metadata.zip -d /tmp/remove-image-metadata-install && \
-mv /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/. ~/.local/share/nemo/actions/remove-image-metadata@pzim-devdata/ && \
 rm -rf /tmp/remove-image-metadata.zip /tmp/remove-image-metadata-install && \
 nemo -q
 ```
 
 ### Manual install
 
-Download [remove-image-metadata@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/remove-image-metadata@pzim-devdata.zip), extract and move contents:
+Download [remove-image-metadata@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/remove-image-metadata@pzim-devdata.zip), extract and copy contents:
 
 ```bash
 unzip remove-image-metadata@pzim-devdata.zip -d /tmp/remove-image-metadata-install && \
-mv /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/remove-image-metadata-install/remove-image-metadata@pzim-devdata/. ~/.local/share/nemo/actions/remove-image-metadata@pzim-devdata/ && \
 rm -rf /tmp/remove-image-metadata-install && \
 nemo -q
 ```

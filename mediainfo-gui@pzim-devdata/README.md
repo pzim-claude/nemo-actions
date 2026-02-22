@@ -17,18 +17,18 @@ sudo apt install mediainfo-gui
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/mediainfo-gui@pzim-devdata.zip" -o /tmp/mediainfo-gui.zip && \
 unzip -o /tmp/mediainfo-gui.zip -d /tmp/mediainfo-gui-install && \
-mv /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/. ~/.local/share/nemo/actions/mediainfo-gui@pzim-devdata/ && \
 rm -rf /tmp/mediainfo-gui.zip /tmp/mediainfo-gui-install && \
 nemo -q
 ```
 
 ### Manual install
 
-Download [mediainfo-gui@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/mediainfo-gui@pzim-devdata.zip), extract and move contents:
+Download [mediainfo-gui@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/mediainfo-gui@pzim-devdata.zip), extract and copy contents:
 
 ```bash
 unzip mediainfo-gui@pzim-devdata.zip -d /tmp/mediainfo-gui-install && \
-mv /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/mediainfo-gui-install/mediainfo-gui@pzim-devdata/. ~/.local/share/nemo/actions/mediainfo-gui@pzim-devdata/ && \
 rm -rf /tmp/mediainfo-gui-install && \
 nemo -q
 ```

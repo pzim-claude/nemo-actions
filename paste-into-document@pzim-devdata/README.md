@@ -20,18 +20,18 @@ sudo apt install libreoffice
 ```bash
 curl -L "https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document@pzim-devdata.zip" -o /tmp/paste-into-document.zip && \
 unzip -o /tmp/paste-into-document.zip -d /tmp/paste-into-document-install && \
-mv /tmp/paste-into-document-install/paste-into-document@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/paste-into-document-install/paste-into-document@pzim-devdata/. ~/.local/share/nemo/actions/paste-into-document@pzim-devdata/ && \
 rm -rf /tmp/paste-into-document.zip /tmp/paste-into-document-install && \
 nemo -q
 ```
 
 ### Manual install
 
-Download [paste-into-document@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document@pzim-devdata.zip), extract and move contents:
+Download [paste-into-document@pzim-devdata.zip](https://github.com/pzim-claude/nemo-actions/releases/latest/download/paste-into-document@pzim-devdata.zip), extract and copy contents:
 
 ```bash
 unzip paste-into-document@pzim-devdata.zip -d /tmp/paste-into-document-install && \
-mv /tmp/paste-into-document-install/paste-into-document@pzim-devdata/* ~/.local/share/nemo/actions/ && \
+cp -rf /tmp/paste-into-document-install/paste-into-document@pzim-devdata/. ~/.local/share/nemo/actions/paste-into-document@pzim-devdata/ && \
 rm -rf /tmp/paste-into-document-install && \
 nemo -q
 ```
